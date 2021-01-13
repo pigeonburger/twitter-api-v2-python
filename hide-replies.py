@@ -20,12 +20,15 @@ oauth = OAuth1(CONSUMER_KEY,
 
 headers = {'content-type': 'application/json'}
 
+# Put the status ID of the Tweet you want to hid/unhide here. The one that's already here is one that is in reply to my account, so you will need to replace it with a status that replies to your own tweet in order for this to work.
+status_id = 1349331895771942913
+
 # CHANGE THIS TO FALSE IF YOU WANT TO UNHIDE A REPLY
 params = {
   'hidden': True
 }
 
-response = requests.put("https://api.twitter.com/2/tweets/1349331895771942913/hidden", data=json.dumps(params), headers=headers, auth=oauth)
+response = requests.put(f"https://api.twitter.com/2/tweets/{status_id}/hidden", data=json.dumps(params), headers=headers, auth=oauth)
 
 # Will return an indicator of whether the Tweet is hidden or not (true or false)
 print(response.json())
