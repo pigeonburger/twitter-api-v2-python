@@ -1,5 +1,5 @@
 # Twitter API V2 Python
-These are simpler versions of the standard Twitter API v2 Python samples that were <a href="https://github.com/twitterdev/Twitter-API-v2-sample-code">provided by Twitter</a> themselves. These ones allow for seamless OAuth1 authentication, without worrying about pasting pins and stuff when it comes to user-based authentication.
+These are simpler versions I've based off of the standard Twitter API v2 Python samples that were <a href="https://github.com/twitterdev/Twitter-API-v2-sample-code">provided by Twitter</a> themselves. These ones allow for seamless OAuth1 authentication, without worrying about pasting pins and stuff when it comes to user-based authentication.
 
 These scripts all use <i>user-based authentication</i>, so none of them require Bearer Tokens. Feel free to make a pull request if you adapt any of these scripts for app-based auth (I only needed user auth, so that's why I didn't make them)
 
