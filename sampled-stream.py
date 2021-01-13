@@ -13,6 +13,7 @@ headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
 response = requests.get("https://api.twitter.com/2/tweets/sample/stream", headers=headers, stream=True)
 print(response.status_code)
 
+# Prints the incoming live Tweets as they are tweeted
 for response_line in response.iter_lines():
     if response_line:
         json_response = json.loads(response_line)
