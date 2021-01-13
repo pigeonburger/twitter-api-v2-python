@@ -10,10 +10,13 @@ BEARER_TOKEN = config.get('credentials', 'bearer_token')
 
 headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
 
-query = "from:editvideobot -is:retweet"
-tweet_fields = "tweet.fields=author_id"
-url = f"https://api.twitter.com/2/tweets/search/recent?query={query}&{tweet_fields}"
+params = {
+    'query': 'from:editvideobot -is:retweet',
+    'tweet.fields': 'author_id'
+}
 
-response = requests.get(url, headers=headers)
+url = "https://api.twitter.com/2/tweets/search/recent"
+
+response = requests.get(url, headers=headers, params=params)
 
 print(response.json())
