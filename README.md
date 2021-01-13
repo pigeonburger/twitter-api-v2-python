@@ -7,7 +7,8 @@ These scripts all use <i>user-based authentication</i>, so none of them require 
 
 Python 3 is required.
 
-A Twitter developer account is required.
+A Twitter developer account is required. You can <a href="https://developer.twitter.com/en/apply-for-access">apply for one here</a> if you don't already have one.
+A Project and an App in the <a href="https://developer.twitter.com/en/portal/dashboard">developer dashboard</a> is also required.
 
 The following things need to be installed:
 
