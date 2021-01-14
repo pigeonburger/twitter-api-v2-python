@@ -20,7 +20,7 @@ oauth = OAuth1(CONSUMER_KEY,
 
 headers = {'content-type': 'application/json'}
 
-# Put the status ID of the Tweet you want to hid/unhide here. The one that's already here is one that is in reply to my account, so you will need to replace it with a status that replies to your own tweet in order for this to work.
+# Put the status ID of the Tweet you want to hide/unhide here. The one that's already here is one that is in reply to my account, so you will need to replace it with a status that replies to your own tweet in order for this to work.
 status_id = 1349331895771942913
 
 # CHANGE THIS TO FALSE IF YOU WANT TO UNHIDE A REPLY
