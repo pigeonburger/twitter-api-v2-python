@@ -17,7 +17,7 @@ The following things need to be installed:
   
 <h2>Initial setup:</h2>
 
-Clone this repository: `https://github.com/pygeonburger/twitter-api-v2-python`
+Clone this repository: `https://github.com/pigeonburger/twitter-api-v2-python`
 
 In order to authenticate to Twitter, you'll need to provide your API key and secret, your access token and secret, and your bearer token. Each Python script here uses `configparser` to fetch these keys from one file, so you don't have to paste them into each individual file.
 
